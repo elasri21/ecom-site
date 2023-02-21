@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $family;
+  padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+ul {
+  list-style: none;
+}
+p {
+  font-size: 16px;
+}

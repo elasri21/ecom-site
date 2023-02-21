@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header>
+      <div class="toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="close-menu"><i class="fas fa-times"></i></div>
+      </nav>
+      <div class="cart">
+        <div class="icon-of-cart">
+          <i class="fas fa-cart-plus"></i>
+          <span class="total-of-items">0</span>
+        </div>
+        <img src="images/image-avatar.png" alt="avatar" id="avatar" />
+        <div class="message">
+          <h3>Cart</h3>
+          <p class="num-of-item">Your cart isempty</p>
+        </div>
+      </div>
+    </header>
+    <div id="main-section" class="main-section">
+      <div class="gallery">
+        <div class="main-image">
+          <img src="images/image-product-1.jpg" alt="main image" />
+        </div>
+        <div class="thumb-nail">
+          <img
+            class="active"
+            src="images/image-product-1-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="1"
+          />
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="2"
+          />
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="3"
+          />
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="4"
+          />
+        </div>
+        <div class="arrow right-arrow right">
+          <img src="./images/icon-next.svg" alt="">
+        </div>
+        <div class="arrow left-arrow left">
+          <img src="./images/icon-previous.svg" alt="">
+        </div>
+      </div>
+      <div class="details">
+        <h1 class="company-name">Sneaker Company</h1>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p class="desc">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <div>
+            <span class="new-price">$125.00</span>
+            <span class="discount">50%</span>
+          </div>
+          <span class="old-price">$250.00</span>
+        </div>
+        <div class="add-to-cart">
+          <div class="quantity">
+            <img src="images/icon-plus.svg" alt="plus" class="plus" />
+            <span class="items">0</span>
+            <img src="images/icon-minus.svg" alt="minus" class="minus" />
+          </div>
+          <div class="add-item">
+            <button type="button">
+              <i class="fas fa-cart-plus"></i> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="show">
+      <div class="show-content">
+        <div class="close-shower"><i class="fas fa-times"></i></div>
+        <div class="main-image">
+          <div class="icon left"><i class="fas fa-chevron-left"></i></div>
+          <img src="images/image-product-1.jpg" alt="main image" />
+          <div class="icon right"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="thumb-nail">
+          <img
+            class="active"
+            src="images/image-product-1-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="1"
+          />
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="2"
+          />
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="3"
+          />
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="thumb nail"
+            data-num="4"
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/elasri21" target="_blank">elasri21</a>.
+    </footer>
+    <script src="./js/show.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
